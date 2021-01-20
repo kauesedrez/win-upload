@@ -1,0 +1,29 @@
+{
+  "name": "win-upload",
+  "version": "1.0.0",
+  "description": "Class used to create a drag and drop area for upload files",
+  "main": "src/win-upload.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kauesedrez/win-upload.git"
+  },
+  "keywords": [
+    "winnetoujs",
+    "javascript",
+    "plugin",
+    "upload",
+    "ajax",
+    "progress",
+    "drag",
+    "drop"
+  ],
+  "author": "“Winnetou <“kaue.sedrez@gmail.com”>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kauesedrez/win-upload/issues"
+  },
+  "homepage": "https://github.com/kauesedrez/win-upload#readme"
+}
