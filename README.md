@@ -119,7 +119,7 @@ Receiver two params in constructor method, form and input. Transforms input in a
 
 ## onFiles
 
-Creates a event handler for drag'n drop and returns a callback when files are added. The call back is an array of blog strings urls.
+Creates a event handler for drag'n drop and returns a callback when files are added. The call back is an array of blob strings urls.
 
 ## send
 
