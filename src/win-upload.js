@@ -23,10 +23,12 @@ export class WinnetouUpload {
    * @param {object} data data object
    * @param {string} data.form form id (without #)
    * @param {string} data.input input id (without #)
+   * @param {string} data.string the localized string to show on drop box
    */
   constructor(data) {
     this.form = data.form;
     this.input = data.input;
+    this.string = data.string;
     this.transform();
   }
 
@@ -34,7 +36,7 @@ export class WinnetouUpload {
   transform() {
     Winnetou.select(this.form).append(`
       <label id='win-upload-label' for='${this.input}' class='win-upload-label'>
-      Drop files here or click to choice.
+      ${this.string}
       </label>
     `);
     Winnetou.select(this.input).hide();
