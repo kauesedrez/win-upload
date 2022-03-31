@@ -1,6 +1,6 @@
 {
   "name": "win-upload",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Class used to create a drag and drop area for upload files",
   "main": "src/win-upload.js",
   "scripts": {

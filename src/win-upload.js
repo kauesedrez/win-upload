@@ -3,7 +3,7 @@
  * @author Kaue Sedrez
  * https://github.com/kauesedrez
  *
- * Licence MIT
+ * License MIT
  *
  */
 
