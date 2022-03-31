@@ -80,6 +80,7 @@ export class WinnetouUpload {
     let thumbs = [];
     for (let c = 0; c < files.length; c++) {
       let file = files[c];
+      // @ts-ignore
       thumbs.push(URL.createObjectURL(file));
     }
     return thumbs;
@@ -108,6 +109,7 @@ export class WinnetouUpload {
       let formData = new FormData(form);
       let xhr = new XMLHttpRequest();
       xhr.open("POST", url, true);
+      xhr.responseType = "json";
       xhr.upload.onprogress = e => {
         if (e.lengthComputable) {
           var ratio = Math.floor((e.loaded / e.total) * 100);
@@ -116,7 +118,7 @@ export class WinnetouUpload {
       };
       xhr.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-          return resolve("success");
+          return resolve(this.response || !0);
         }
         if (this.readyState == 4 && this.status != 200) {
           return reject(
